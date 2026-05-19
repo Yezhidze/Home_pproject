@@ -12,7 +12,6 @@ int main()
 {
     setlocale(LC_ALL, "ru_RU.UTF-8");
 
-    // Деревянный дом
     WoodenHouseBuilder woodBuilder;
     woodBuilder.buildFoundation();
     woodBuilder.buildWalls();
@@ -20,7 +19,6 @@ int main()
     House woodHouse = woodBuilder.getHouse();
     woodHouse.show();
 
-    // Кирпичный дом
     BrickHouseBuilder brickBuilder;
     brickBuilder.buildFoundation();
     brickBuilder.buildWalls();

@@ -3,7 +3,6 @@
 
 class Foundation
 {
-public:
 	Material material;
 public:
 	Foundation(Material _material) : material(_material) {};

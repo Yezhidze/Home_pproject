@@ -3,7 +3,6 @@
 
 class Roof
 {
-public:
 	Material material;
 public:
 	Roof(Material _material) : material(_material) {};

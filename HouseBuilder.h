@@ -33,6 +33,8 @@ public:
     {
         foundation = new Foundation(Material::Wood);
     }
+
+
     House getHouse() override
     {
         return House(*wall, *roof, *foundation);

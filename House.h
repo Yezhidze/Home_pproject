@@ -16,29 +16,23 @@ public:
 
     void show() const 
     {
-        // Стены
         cout << "Стены: ";
         if (wall.getMaterial() == Material::Wood)
-            cout << "деревянные";
-        else
-            cout << "кирпичные";
-        cout << endl;
+            cout << "деревянные" << endl;
+        else if (wall.getMaterial() == Material::Brick)
+            cout << "кирпичные" << endl;
 
-        // Крыша
         cout << "Крыша: ";
         if (roof.getMaterial() == Material::Wood)
-            cout << "деревянная";
-        else
-            cout << "кирпичная";
-        cout << endl;
+            cout << "деревянная" << endl;
+        else if (wall.getMaterial() == Material::Brick)
+            cout << "кирпичная" << endl;
 
-        // Фундамент
         cout << "Фундамент: ";
         if (foundation.getMaterial() == Material::Wood)
-            cout << "деревянный";
-        else
-            cout << "кирпичный";
-        cout << endl;
+            cout << "деревянный" << endl;
+        else if (wall.getMaterial() == Material::Brick)
+            cout << "кирпичный" << endl;
     }
 };
 
